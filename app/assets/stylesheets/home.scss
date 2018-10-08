@@ -34,7 +34,9 @@ html, body {
   	border-spacing: 0;
   }
   input {
-    border-radius: 0;
+    border-radius: 0 !important;
+    -webkit-appearance: none;
+    
     &::placeholder {
       color: #000000;
       opacity: 1;
@@ -145,6 +147,7 @@ form {
   padding: 0.5em 0;
   background-color: #000000;
   color: #ffffff;
+  border-radius: 0 !important;
 
   &:hover {
     padding: 0.5em 0;
