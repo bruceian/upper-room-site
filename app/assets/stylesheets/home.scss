@@ -40,7 +40,7 @@ html, body {
       opacity: 1;
     }
     &:focus {
-      border: none;
+      // border: none;
       outline-color: none !important;
       outline: -webkit-focus-ring-color auto 0;
       outline-color: none;
@@ -88,6 +88,12 @@ p, input {
   font-size: 1em;
 }
 
+@media only screen and (min-width: 750px) {
+  p, input {
+    font-size: 2.4vw;
+  }
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -115,6 +121,7 @@ p, input {
 }
 
 form {
+  max-width: 767px;
   p {
     font-family: "Apercu Bold", "Times New Roman", Times, serif;
   }
