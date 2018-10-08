@@ -41,9 +41,49 @@ html, body {
   font-family: 'Apercu Bold';
   src: font-url("Apercu-Bold.otf");
 }
+@font-face {
+  font-family: 'Apercu Light';
+  src: font-url("Apercu-Light.otf");
+}
+@font-face {
+  font-family: 'Apercu Light Italic';
+  src: font-url("Apercu-Light-Italic.otf");
+}
 
 // GENERAL
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Apercu Bold", "Times New Roman", Times, serif;
+  line-height: 1.2em;
+  letter-spacing: -2px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.h-100 {
+  min-height: 100vh;
+}
+
+
+//INDEX
+
+.title {
+  font-size: 13vw;
+  text-align: center;
+}
+.times {
+  font-family: "Times New Roman", Times, serif;
 }
