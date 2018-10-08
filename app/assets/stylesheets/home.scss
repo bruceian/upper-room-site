@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html, body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -11,7 +11,7 @@ html, body {
   vertical-align: baseline;
   *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -34,7 +34,24 @@ html, body {
   	border-spacing: 0;
   }
   input {
+    border-radius: 0;
+    &::placeholder {
+      color: #000000;
+      opacity: 1;
+    }
+    &:focus {
+      border: none;
+      outline-color: none !important;
+      outline: -webkit-focus-ring-color auto 0;
+      outline-color: none;
+      outline-style: none;
+      outline-width: 0;
+    }
+  }
 
+  a, a:hover {
+    color: #000000;
+    text-decoration: underline;
   }
 }
 @font-face {
@@ -52,14 +69,23 @@ html, body {
 
 // GENERAL
 
+#wrapper {
+  width: calc(100vw - 60px);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Apercu Bold", "Times New Roman", Times, serif;
   line-height: 1.2em;
   letter-spacing: -2px;
 }
 
-p {
+p, input {
   font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+.small {
+  font-size: 1em;
 }
 
 .flex {
@@ -81,9 +107,41 @@ p {
 //INDEX
 
 .title {
-  font-size: 13vw;
+  font-size: 11vw;
   text-align: center;
 }
 .times {
   font-family: "Times New Roman", Times, serif;
+}
+
+form {
+  p {
+    font-family: "Apercu Bold", "Times New Roman", Times, serif;
+  }
+  p, input {
+    margin-bottom: 1em;
+  }
+
+  input {
+    border-bottom: 2px solid #000000;
+    background-color: #ffffff;
+    width: 100%;
+
+  }
+}
+.small {
+  margin-top: 1em;
+}
+.button.black {
+  cursor: pointer;
+  border: 2px solid #000000;
+  padding: 0.5em 0;
+  background-color: #000000;
+  color: #ffffff;
+
+  &:hover {
+    padding: 0.5em 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
