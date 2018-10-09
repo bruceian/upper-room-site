@@ -18,6 +18,6 @@
 
 $(function() {
 
-alert('jquery working');
+// alert('jquery working');
 
 });
