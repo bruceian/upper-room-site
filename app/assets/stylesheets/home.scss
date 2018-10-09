@@ -124,7 +124,9 @@ p, input {
 .times {
   font-family: "Iowan Roman", "Times New Roman", Times, serif;
 }
-
+h1.times {
+  letter-spacing: -1px;
+}
 form {
   max-width: 767px;
   p {
